@@ -609,7 +609,6 @@ img {
 }
 
 .animate {
-  max-width: 400px;
   animation: animate 5s linear infinite;
 }
 
