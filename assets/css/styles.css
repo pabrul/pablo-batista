@@ -561,6 +561,15 @@ img {
   .about__btn__container {
     justify-content: center !important;
   }
+  .about__btn__container-icon {
+    white-space: nowrap;
+  }
+  .about__btn__container a {
+    margin: 5px;
+  }
+  p.about__text {
+    padding: 10px;
+  }
 }
 
 .about__btn__container {
@@ -596,16 +605,6 @@ img {
   speak: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.about__btn__container-icon {
-  display: inline-block;
-  font-size: var(--normal-font-size);
-  margin-right: var(--mb-2);
-  margin-bottom: var(--mb-3);
-  padding: 0.25rem 0.5rem;
-  background-color: var(--white-color);
-  border-radius: 0.25rem;
 }
 
 .animate {
