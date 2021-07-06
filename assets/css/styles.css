@@ -254,6 +254,7 @@ img {
 }
 .about__text {
   margin-bottom: var(--mb-4);
+  text-align: justify;
 }
 .about__profession {
   display: block;
@@ -332,6 +333,12 @@ img {
 .contact__container {
   row-gap: 2rem;
 }
+
+.contact__info {
+  position: relative;
+  top: 100px;
+}
+
 .contact__subtitle {
   font-size: var(--normal-font-size);
   color: var(--first-color);
@@ -482,7 +489,7 @@ img {
   }
 
   .contact__container {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     text-align: center;
   }
@@ -620,3 +627,37 @@ img {
     transform: translateY(100px);
   }
 }
+
+#contact-svg{
+  animation: contact 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+@keyframes contact{
+  from{
+      transform: rotateX(0deg);
+  }
+
+  to{
+      transform: rotateX(20deg);
+  }
+}
+
+svg{
+  margin-bottom: 30px;
+  width: 100%;
+  min-width: 450px;
+  height: 100%;
+}
+
+@media screen and (max-width:768px) {
+    svg {
+      width: 100% !important;
+      height: 100% !important;
+      min-width: 50px !important;
+  }
+  .contact__info {
+     top: 0;
+  }
+}
+
