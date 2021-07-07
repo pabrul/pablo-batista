@@ -661,3 +661,23 @@ svg{
   }
 }
 
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2b6348 #e6e6e6;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #e6e6e6;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2b6348;
+  border-radius: 20px;
+  border: 3px solid #e6e6e6;
+}
